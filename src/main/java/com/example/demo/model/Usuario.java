@@ -14,6 +14,8 @@ public class Usuario {
 	private String nombre;
 	private String dni;
 	
+	public Usuario() {}
+	
 	public Usuario(int id, String nombre, String dni) {
 		super();
 		this.id = id;
