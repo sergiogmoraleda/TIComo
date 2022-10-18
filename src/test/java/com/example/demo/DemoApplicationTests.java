@@ -6,11 +6,17 @@ import org.springframework.boot.test.context.SpringBootTest;
 @SpringBootTest
 class DemoApplicationTests {
 
+<<<<<<< HEAD
 /*
+=======
+>>>>>>> main
 	@Test
 	void contextLoads() {
 	}
 
+<<<<<<< HEAD
 */
 
+=======
+>>>>>>> main
 }
