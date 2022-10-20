@@ -7,6 +7,7 @@ import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
+import com.example.demo.controller.usuarioController;
 import com.example.demo.dao.UsuarioRepository;
 import com.example.demo.model.Usuario;
 
@@ -24,13 +25,6 @@ public class DemoApplication implements CommandLineRunner {
 
 	@Override
 	public void run(String... args) throws Exception{
-
-		Usuario a = new Usuario(1,"NACHO","090908");
-		usuarioRepository.save(a);
-		
-		Usuario pi2 = new Usuario(2, "Calero", "Muñoz");
-		Usuario pi3 = new Usuario(3, "Adan", "Antonio");	
-		usuarioRepository.saveAll(Arrays.asList(pi2,pi3));
 		
 		
 	}
