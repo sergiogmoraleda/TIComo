@@ -22,7 +22,7 @@ public class Usuario {
 	private String email;
 	private String pwd;
 	
-	private Set <Roles> rol;
+	private Set <Roles> roles;
 	
 	public Usuario() {}
 
@@ -102,17 +102,17 @@ public class Usuario {
 		this.pwd = pwd;
 	}
 
-	public Set<Roles> getRol() {
-		return rol;
+	public Set<Roles> getRoles() {
+		return roles;
 	}
 
-	public void setRol(Set<Roles> rol) {
-		this.rol = rol;
+	public void setRoles(Set<Roles> rol) {
+		this.roles = rol;
 	}
 
 	@Override
 	public int hashCode() {
-		return Objects.hash(apellidos, direccion, email, id, nif, nombre, pwd, rol, telefono);
+		return Objects.hash(apellidos, direccion, email, id, nif, nombre, pwd, roles, telefono);
 	}
 
 	@Override
@@ -127,13 +127,13 @@ public class Usuario {
 		return Objects.equals(apellidos, other.apellidos) && Objects.equals(direccion, other.direccion)
 				&& Objects.equals(email, other.email) && id == other.id && Objects.equals(nif, other.nif)
 				&& Objects.equals(nombre, other.nombre) && Objects.equals(pwd, other.pwd)
-				&& Objects.equals(rol, other.rol) && Objects.equals(telefono, other.telefono);
+				&& Objects.equals(roles, other.roles) && Objects.equals(telefono, other.telefono);
 	}
 
 	@Override
 	public String toString() {
 		return "Usuario [id=" + id + ", nombre=" + nombre + ", apellidos=" + apellidos + ", nif=" + nif + ", direccion="
-				+ direccion + ", telefono=" + telefono + ", email=" + email + ", pwd=" + pwd + ", rol=" + rol + "]";
+				+ direccion + ", telefono=" + telefono + ", email=" + email + ", pwd=" + pwd + ", rol=" + roles + "]";
 	}
 
 	

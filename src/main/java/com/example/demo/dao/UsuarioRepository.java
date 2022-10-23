@@ -8,5 +8,7 @@ import com.example.demo.model.Usuario;
 public interface UsuarioRepository extends MongoRepository<Usuario, Integer> {
 	
 	public Usuario findByEmail(String email);
+	public Usuario findByNombre(String nombre);
+
 
 }
